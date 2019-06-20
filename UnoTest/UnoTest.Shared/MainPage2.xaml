@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="UnoTest.Shared.MainPage2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UnoTest.Shared"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+        <TextBlock FontSize="30">Let's try simple listview / binding:</TextBlock>
+        <ListView x:Name="listofthings" ItemsSource="{x:Bind things}"></ListView>
+        </StackPanel>
+    </Grid>
+</Page>
